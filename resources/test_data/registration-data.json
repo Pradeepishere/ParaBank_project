@@ -1,0 +1,13 @@
+{
+  "firstName": "Tim",
+  "lastName": "Roy",
+  "address": "123 JSON Test Street",
+  "city": "Testville",
+  "state": "CA",
+  "zipCode": "90210",
+  "phoneNumber": "555-0101",
+  "ssn": "000-00-0001",
+  "username": "Roy",
+  "password": "Roy_Password123!",
+  "confirmPassword": "Roy_Password123!"
+}
