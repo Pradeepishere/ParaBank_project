@@ -28,35 +28,35 @@
 
 name: Playwright Automation Tests
 
-# Trigger workflow whenever code is pushed
 on:
   push:
+    branches:
+      - master
 
-# Define jobs
 jobs:
   playwright-tests:
-    # GitHub will provide an Ubuntu machine
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Download your GitHub repository code
-      - name: Checkout repository
-        uses: actions/checkout@v6
+      # 1. Get code from GitHub
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      # Step 2: Install Node.js
+      # 2. Install Node.js
       - name: Setup Node.js
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@v4
         with:
           node-version: "22"
+          cache: npm
 
-      # Step 3: Install project dependencies
+      # 3. Install dependencies
       - name: Install dependencies
         run: npm ci
 
-      # Step 4: Install Playwright browsers and dependencies
+      # 4. Install Playwright browsers
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      # Step 5: Execute Playwright tests
-      - name: Run Playwright tests
+      # 5. Run Playwright tests
+      - name: Execute Playwright tests
         run: npx playwright test
