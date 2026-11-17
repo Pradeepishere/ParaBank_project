@@ -8,6 +8,7 @@
     "@types/node": "^26.6.6"
   },
   "scripts": {
+    "AllTest": "npx playwright test",
     "test": "playwright test"
   }
 }
