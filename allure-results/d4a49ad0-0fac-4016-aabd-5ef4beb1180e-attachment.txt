@@ -1,0 +1,3 @@
+Update Profile test completed successfully
+----------------------------
+Logged out SuccesFully

@@ -1,0 +1,5 @@
+UserName :  Roy_35c7d7ecc0
+Your account was created successfully. You are now logged in.
+Available Balance in first row :  500
+Funding Account ID with balance :  55302  ,  string
+----------------------------
