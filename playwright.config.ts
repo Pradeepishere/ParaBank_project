@@ -40,7 +40,6 @@ export default defineConfig({
     // CI: true (headless)
     headless: process.env.CI ? true : false,
     screenshot: 'only-on-failure',
-
   },
 
   /* Configure projects for major browsers */
